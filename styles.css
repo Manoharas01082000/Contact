@@ -3,6 +3,10 @@
     top: 20px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
 
 .logo-container img {
@@ -21,6 +25,8 @@ body{
     height: 100%;
     margin-top: 100px;
     margin-bottom: 150px;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .wrapper {
@@ -57,15 +63,17 @@ label {
     margin-top: 10px;
     font-weight: absolute ;
     font-size: 15px;
+    margin-bottom: 5px;
 }
 
 input, select, textarea {
-    width: 70%;
-    padding: 10px;
     margin-top: 5px;
-    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {
@@ -96,14 +104,29 @@ form p {
     font-size: 14px;
     color: #666;
 }
-
+form {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.form-section {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
 textarea {
+    height: 30vh;
     resize: vertical;
 }
 
 label[for="newsletter"] {
-    display: flex;
     align-items: center;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 label[for="newsletter"] input {
@@ -113,10 +136,13 @@ label[for="newsletter"] input {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px; /* Add top margin */
-    justify-content: space-between;
+    margin-top: 10px; /* Add top margin */
     align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex: 1; 
+    padding: 20px;
 }
 
 .contact-details {
@@ -124,11 +150,44 @@ label[for="newsletter"] input {
     max-width: 30%;
     /* Add any styling for contact details */
 }
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+}
 
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
 .form-container {
     flex: 1;
     max-width: 65%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
     /* Add any styling for the form */
+}
+.contact-details {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-details h2 {
+    margin-top: 0;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+footer {
+    margin-top: auto;
 }
 /* Add this CSS at the end of your existing CSS */
 
