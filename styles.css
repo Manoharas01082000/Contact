@@ -1,0 +1,132 @@
+.logo-container {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-container img {
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: hwb(0 96% 3% / 0.904);
+    color: hsl(135, 39%, 30%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+
+.wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.contact-details {
+    flex: 1;
+    max-width: 100%;
+    padding-right: 10px;
+}
+
+.form-container {
+    flex: 2;
+    max-width: 70%;
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: absolute ;
+    font-size: 15px;
+}
+
+input, select, textarea {
+    width: 70%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:hsl(135, 39%, 30%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #265180;
+
+}
+
+.contact-details a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+form p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+textarea {
+    resize: vertical;
+}
+
+label[for="newsletter"] {
+    display: flex;
+    align-items: center;
+}
+
+label[for="newsletter"] input {
+    margin-right: 10px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px; /* Add top margin */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-details {
+    flex: 1;
+    max-width: 30%;
+    /* Add any styling for contact details */
+}
+
+.form-container {
+    flex: 1;
+    max-width: 65%;
+    /* Add any styling for the form */
+}
